@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="750.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SignUpController">
+   <children>
+      <Button fx:id="submitButton" layoutX="469.0" layoutY="543.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="186.0" text="Submit and Go SignIn">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font></Button>
+      <DatePicker fx:id="datepickerBirth" layoutX="452.0" layoutY="232.0" promptText="dd/mm/yy" AnchorPane.topAnchor="232.0" />
+      <PasswordField fx:id="textfieldpassword" layoutX="450.0" layoutY="277.0" prefHeight="26.0" prefWidth="179.0" />
+      <PasswordField fx:id="textfieldLpasswordconfirm" layoutX="450.0" layoutY="314.0" prefHeight="26.0" prefWidth="179.0" />
+      <TextField fx:id="textfieldFname" layoutX="452.0" layoutY="61.0" prefHeight="26.0" prefWidth="179.0" promptText="First name" />
+      <Label layoutX="280.0" layoutY="63.0" text="First name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="275.0" layoutY="234.0" text="Birthday">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="279.0" layoutY="198.0" text="Gender">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="277.0" layoutY="279.0" prefHeight="22.0" prefWidth="74.0" text="password">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="278.0" layoutY="316.0" prefHeight="22.0" prefWidth="128.0" text="Confirm password">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="273.0" fitWidth="264.0" layoutX="14.0" layoutY="31.0">
+         <image>
+            <Image url="@../../../../Desktop/Icons/LOGO6.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="281.0" layoutY="105.0" text="Last name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfieldLname" layoutX="455.0" layoutY="103.0" prefHeight="26.0" prefWidth="179.0" promptText="Last name" />
+      <Label layoutX="277.0" layoutY="362.0" text="In case you lost the password , for security concernes and to help">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="279.0" layoutY="432.0" text="Please chose a question">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="282.0" layoutY="472.0" prefHeight="22.0" prefWidth="120.0" text="The answer">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="280.0" layoutY="391.0" text="you recover your password,  we need a confidential information ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radiobuttonMale" layoutX="452.0" layoutY="200.0" mnemonicParsing="false" onAction="#setAvatarChoice" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="Gender" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radiobuttonFemale" layoutX="545.0" layoutY="200.0" mnemonicParsing="false" onAction="#setAvatarChoice" text="Female" toggleGroup="$Gender" />
+      <ChoiceBox fx:id="choiceboxQuestion" layoutX="448.0" layoutY="430.0" prefHeight="26.0" prefWidth="194.0" />
+      <ChoiceBox fx:id="choiceboxAnswer" layoutX="448.0" layoutY="483.0" prefHeight="26.0" prefWidth="194.0" />
+      <TextField fx:id="textfieldusername" layoutX="455.0" layoutY="154.0" prefHeight="26.0" prefWidth="179.0" promptText="Username" />
+      <Label layoutX="277.0" layoutY="157.0" prefHeight="18.0" prefWidth="74.0" text="Username">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="275.0" layoutY="532.0" prefHeight="22.0" prefWidth="179.0" text="chose your prefer Avatar">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="355.0" layoutY="14.0" prefHeight="22.0" prefWidth="274.0" text="fill all the informations below">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="imageview1RadioButton" layoutX="262.0" layoutY="578.0" mnemonicParsing="false">
+         <graphic>
+            <ImageView fx:id="avatar1imageview" fitHeight="95.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+         <toggleGroup>
+            <ToggleGroup fx:id="avatar" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="imageview2RadioButton" layoutX="422.0" layoutY="576.0" mnemonicParsing="false" toggleGroup="$avatar">
+         <graphic>
+            <ImageView fx:id="avatar2imageview" fitHeight="98.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+      </RadioButton>
+      <RadioButton fx:id="imageview3RadioButton" layoutX="593.0" layoutY="576.0" mnemonicParsing="false" toggleGroup="$avatar">
+         <graphic>
+            <ImageView fx:id="avatar3imageview" fitHeight="100.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+      </RadioButton>
+   </children>
+</AnchorPane>

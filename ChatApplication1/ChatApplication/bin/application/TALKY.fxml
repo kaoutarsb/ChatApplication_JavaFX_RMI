@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TalkyController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: white;">
+         <children>
+            <Button fx:id="signInButton" layoutX="182.0" layoutY="439.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="95.0" text="Sign in" textFill="#ad18d6">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="signUpButton" layoutX="182.0" layoutY="558.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="95.0" text="Sign up" textFill="#ad18d6">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Label layoutX="43.0" layoutY="64.0" prefHeight="59.0" prefWidth="549.0" text="Welcome to TALKY" textFill="#bf72db">
+               <font>
+                  <Font name="Arial Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="55.0" layoutY="158.0" text="Nice to see you here. With TALKY stay always connected with your friends">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="114.0" layoutY="189.0" text="Discover a new space to chat">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="114.0" layoutY="215.0" text="Create rooms and discuss in groups">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textfieldusername" layoutX="124.0" layoutY="321.0" prefHeight="25.0" prefWidth="211.0" />
+            <Label layoutX="43.0" layoutY="325.0" text="Username">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="373.0" text="password">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="113.0" layoutY="240.0" text="Communicate easily">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="46.0" layoutY="514.0" text="create account if you don't have one">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="wel" fitHeight="251.0" fitWidth="305.0" layoutX="350.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@welco1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="log" fitHeight="127.0" fitWidth="124.0" layoutX="521.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@LOGO6.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="textfieldpassword" layoutX="124.0" layoutY="369.0" prefHeight="25.0" prefWidth="211.0" />
+            <Hyperlink fx:id="hyperlinkpassword" layoutX="107.0" layoutY="404.0" text="forgot password" textFill="#a917cf" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="469.0" layoutY="266.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="140.0" fitWidth="136.0" layoutX="520.0" layoutY="264.0">
+               <image>
+                  <Image url="@../../../../Desktop/phot/LOGO6.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="383.0" layoutY="364.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="369.0" fitWidth="424.0" layoutX="357.0" layoutY="274.0">
+               <image>
+                  <Image url="@../../../../Desktop/Icons/welco1%20-%20Copie.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="151.0" layoutX="601.0" layoutY="272.0">
+               <image>
+                  <Image url="@../../../../Desktop/Icons/LOGO6.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
